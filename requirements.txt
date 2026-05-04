@@ -1,0 +1,18 @@
+# b1500_powermeter_rollover – Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Core instrument / I-O
+pyvisa>=1.12.0
+pyvisa-py>=0.5.3
+pyusb>=1.2.1          # USB backend for pyvisa-py
+
+# Numerics
+numpy>=1.21.0
+scipy>=1.7.0          # (optional) curve fitting in analysis scripts
+
+# GUI  (optional – only needed for GUI mode)
+PyQt5>=5.15.0
+matplotlib>=3.5.0
+
+# ML rollover detection  (optional – falls back to numpy.polyfit if absent)
+scikit-learn>=1.0.0
