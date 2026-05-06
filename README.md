@@ -1,8 +1,12 @@
 # b1500_powermeter_rollover
 
+[![PyPI](https://img.shields.io/pypi/v/b1500-powermeter-rollover)](https://pypi.org/project/b1500-powermeter-rollover/)
+[![Python](https://img.shields.io/pypi/pyversions/b1500-powermeter-rollover)](https://pypi.org/project/b1500-powermeter-rollover/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **Synchronized Keysight B1500 + Thorlabs power-meter IV sweep with four-algorithm rollover detection.**
 
-© Veronica Gao ZHan – May 2026
+© Veronica Gao Zhan – May 2026
 
 ---
 
