@@ -111,6 +111,32 @@ r = eng.rollover_result
 print(f"Peak power {r.peak_power:.4e} W at {r.peak_voltage:.4f} V")
 ```
 
+---
+
+## License
+
+MIT License
+
+Copyright (c) 2026 Veronica Gao Zhan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 ### Standalone rollover detector (no instruments)
 
 ```python
@@ -145,6 +171,3 @@ for power in my_power_readings:
 
 This project was developed using **vibe coding** — an AI-assisted development workflow powered by [GitHub Copilot](https://github.com/features/copilot). The architecture, code structure, and implementation were generated through iterative natural-language prompting and human review.
 
-## License
-
-© Veronica Gao ZHan
