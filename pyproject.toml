@@ -1,20 +1,38 @@
 [build-system]
 requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name            = "b1500-powermeter-rollover"
-version         = "1.0.0"
-description     = "B1500 + Thorlabs power-meter IV sweep with four-algorithm rollover detection"
+version         = "1.0.1"
+description     = "Keysight B1500A + Thorlabs PM100D synchronized LIV sweep with automatic optical rollover detection (CUSUM, EWMA, rolling average, regression)"
 readme          = "README.md"
-authors         = [{name = "Veronica Gao ZHan"}]
+authors         = [{name = "Veronica Gao Zhan"}]
 requires-python = ">=3.8"
-keywords        = ["semiconductor", "B1500", "Thorlabs", "IV sweep", "rollover", "VISA", "PyQt5"]
+keywords        = [
+    "VCSEL", "laser", "LIV", "IV sweep", "optical power",
+    "rollover", "rollover detection", "CUSUM", "EWMA",
+    "Keysight B1500", "B1500A", "Thorlabs PM100D", "power meter",
+    "VISA", "pyvisa", "semiconductor", "photonics",
+    "wafer", "wafer characterization", "PyQt5", "instrumentation",
+]
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
     "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
     "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Operating System :: Microsoft :: Windows",
+    "Environment :: Win32 (MS Windows)",
 ]
 dependencies = [
     "pyvisa>=1.12.0",
@@ -22,6 +40,11 @@ dependencies = [
     "pyusb>=1.2.1",
     "numpy>=1.21.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/vvvvvero/b1500_powermeter_LIV_rollover"
+Repository = "https://github.com/vvvvvero/b1500_powermeter_LIV_rollover"
+"Bug Tracker" = "https://github.com/vvvvvero/b1500_powermeter_LIV_rollover/issues"
 
 [project.optional-dependencies]
 gui  = ["PyQt5>=5.15.0", "matplotlib>=3.5.0"]
@@ -32,5 +55,6 @@ all  = ["PyQt5>=5.15.0", "matplotlib>=3.5.0", "scikit-learn>=1.0.0", "scipy>=1.7
 b1500-rollover = "b1500_powermeter_rollover.__main__:main"
 
 [tool.setuptools.packages.find]
-where = [".."]
+where = ["."]
 include = ["b1500_powermeter_rollover*"]
+
